@@ -1,0 +1,59 @@
+<html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع عائلتي </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>مرحبا بكم في موقع عائلتنا </h1>
+        <p>موقع خاص لكل فرد من أفراد العائلة</p>
+    </header>
+
+    <div class="container">
+        <section id="mother" class="family-section">
+            <h2>أمي </h2>
+            <p>أمي الحبيبة، مصدر الحب والدفء في حياتي. هذه المساحة لكِ.</p>
+            <button onclick="showMessage('mother')">رسالة لأمي</button>
+        </section>
+
+        <section id="father" class="family-section">
+            <h2>أبي </h2>
+            <p>أبي العزيز، سندي وقوتي. هذه المساحة لك.</p>
+            <button onclick="showMessage('father')">رسالة لأبي</button>
+        </section>
+
+        <section id="brother" class="family-section">
+            <h2>أخي </h2>
+            <p>أخي، شريكي في المغامرات والذكريات الجميلة. هذه المساحة لك.</p>
+            <button onclick="showMessage('brother')">رسالة لأخي</button>
+        </section>
+
+        <section id="sister" class="family-section">
+            <h2>أختي </h2>
+            <p>أختي، سرّي وصديقتي المقربة. هذه المساحة لك.</p>
+            <button onclick="showMessage('sister')">رسالة لأختي</button>
+        </section>
+
+        <section id="grandmother" class="family-section">
+            <h2>جدتي </h2>
+            <p>جدتي الغالية، حكاياتك ودفء حضنك لا يُنسى. هذه المساحة لك.</p>
+            <button onclick="showMessage('grandmother')">رسالة لجدتي</button>
+        </section>
+    </div>
+
+    <div id="message-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h3 id="popup-title"></h3>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
